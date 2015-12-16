@@ -45,8 +45,8 @@ Reservation:
     Timestampable: ~
   columns:
     client_id:            { type: integer(4), notnull: true }
-    firstname:            { type: string(50), notnull: true }
-    lastname:             { type: string(50), notnull: true }
+    firstname:            { type: string(50), notnull: false }
+    lastname:             { type: string(50), notnull: false }
     destination_id:       { type: integer(4), notnull: true }
     uniqid:               { type: string(32), notnull: true }
     round_trip:           { type: string(2),  notnull: true }

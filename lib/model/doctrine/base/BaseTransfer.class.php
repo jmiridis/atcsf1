@@ -14,22 +14,22 @@
  * @property boolean $active
  * @property Destination $Destination
  * 
- * @method integer     getDestinationId()  Returns the current record's "destination_id" value
- * @method text        getDescription()    Returns the current record's "description" value
- * @method integer     getMinPax()         Returns the current record's "min_pax" value
- * @method integer     getMaxPax()         Returns the current record's "max_pax" value
- * @method string      getRoundTrip()      Returns the current record's "round_trip" value
- * @method numeric     getPrice()          Returns the current record's "price" value
- * @method boolean     getActive()         Returns the current record's "active" value
- * @method Destination getDestination()    Returns the current record's "Destination" value
- * @method Transfer    setDestinationId()  Sets the current record's "destination_id" value
- * @method Transfer    setDescription()    Sets the current record's "description" value
- * @method Transfer    setMinPax()         Sets the current record's "min_pax" value
- * @method Transfer    setMaxPax()         Sets the current record's "max_pax" value
- * @method Transfer    setRoundTrip()      Sets the current record's "round_trip" value
- * @method Transfer    setPrice()          Sets the current record's "price" value
- * @method Transfer    setActive()         Sets the current record's "active" value
- * @method Transfer    setDestination()    Sets the current record's "Destination" value
+ * @method integer     get()               Returns the current record's "destination_id" value
+ * @method text        get()               Returns the current record's "description" value
+ * @method integer     get()               Returns the current record's "min_pax" value
+ * @method integer     get()               Returns the current record's "max_pax" value
+ * @method string      get()               Returns the current record's "round_trip" value
+ * @method numeric     get()               Returns the current record's "price" value
+ * @method boolean     get()               Returns the current record's "active" value
+ * @method Destination get()               Returns the current record's "Destination" value
+ * @method Transfer    set()               Sets the current record's "destination_id" value
+ * @method Transfer    set()               Sets the current record's "description" value
+ * @method Transfer    set()               Sets the current record's "min_pax" value
+ * @method Transfer    set()               Sets the current record's "max_pax" value
+ * @method Transfer    set()               Sets the current record's "round_trip" value
+ * @method Transfer    set()               Sets the current record's "price" value
+ * @method Transfer    set()               Sets the current record's "active" value
+ * @method Transfer    set()               Sets the current record's "Destination" value
  * 
  * @package    atc
  * @subpackage model

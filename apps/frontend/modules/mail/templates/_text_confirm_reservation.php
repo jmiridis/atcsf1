@@ -1,4 +1,4 @@
-Dear <?php echo $reservation->Client;?>,
+Dear <?php echo $reservation->firstname;?> <?php echo $reservation->lastname;?>,
 
 Thank you for ordering transportation with ATC.
 
@@ -11,8 +11,8 @@ You can access your reservation at any time using the following link:<br />
 
 Reservation Details
 ====================
-Customer name: <?php echo $reservation->Client;?>
-Reservation #: <?php echo $reservation->Client;?>1KUL49B
+Customer name: <?php echo $reservation->firstname;?> <?php echo $reservation->lastname;?>
+Reservation #: <?php echo $reservation->uniqid;?>
 Transportation Total: $<?php echo $reservation->price;?> USD
 Transfer: Airport - <?php echo $reservation->Destination;?> (<?php echo $reservation->Destination;?>), <?php echo $reservation->round_trip == 'RT'? 'Round Trip' : 'One Way';?>
 # of PAX: <?php echo $reservation->no_pax;?>

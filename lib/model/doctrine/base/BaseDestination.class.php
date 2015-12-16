@@ -12,18 +12,18 @@
  * @property Doctrine_Collection $Transfers
  * @property Doctrine_Collection $Reservations
  * 
- * @method string              getTitle()        Returns the current record's "title" value
- * @method text                getDescription()  Returns the current record's "description" value
- * @method integer             getSeqNum()       Returns the current record's "seq_num" value
- * @method boolean             getActive()       Returns the current record's "active" value
- * @method Doctrine_Collection getTransfers()    Returns the current record's "Transfers" collection
- * @method Doctrine_Collection getReservations() Returns the current record's "Reservations" collection
- * @method Destination         setTitle()        Sets the current record's "title" value
- * @method Destination         setDescription()  Sets the current record's "description" value
- * @method Destination         setSeqNum()       Sets the current record's "seq_num" value
- * @method Destination         setActive()       Sets the current record's "active" value
- * @method Destination         setTransfers()    Sets the current record's "Transfers" collection
- * @method Destination         setReservations() Sets the current record's "Reservations" collection
+ * @method string              get()             Returns the current record's "title" value
+ * @method text                get()             Returns the current record's "description" value
+ * @method integer             get()             Returns the current record's "seq_num" value
+ * @method boolean             get()             Returns the current record's "active" value
+ * @method Doctrine_Collection get()             Returns the current record's "Transfers" collection
+ * @method Doctrine_Collection get()             Returns the current record's "Reservations" collection
+ * @method Destination         set()             Sets the current record's "title" value
+ * @method Destination         set()             Sets the current record's "description" value
+ * @method Destination         set()             Sets the current record's "seq_num" value
+ * @method Destination         set()             Sets the current record's "active" value
+ * @method Destination         set()             Sets the current record's "Transfers" collection
+ * @method Destination         set()             Sets the current record's "Reservations" collection
  * 
  * @package    atc
  * @subpackage model

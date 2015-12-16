@@ -16,26 +16,26 @@
  * @property Doctrine_Collection $Reservations
  * @property Doctrine_Collection $Messages
  * 
- * @method integer             getSfGuardUserId()    Returns the current record's "sf_guard_user_id" value
- * @method string              getFirstname()        Returns the current record's "firstname" value
- * @method string              getLastname()         Returns the current record's "lastname" value
- * @method string              getOrigin()           Returns the current record's "origin" value
- * @method string              getPhone()            Returns the current record's "phone" value
- * @method string              getEmailAddress()     Returns the current record's "email_address" value
- * @method boolean             getEmailConfirmed()   Returns the current record's "email_confirmed" value
- * @method sfGuardUser         getUser()             Returns the current record's "User" value
- * @method Doctrine_Collection getReservations()     Returns the current record's "Reservations" collection
- * @method Doctrine_Collection getMessages()         Returns the current record's "Messages" collection
- * @method Client              setSfGuardUserId()    Sets the current record's "sf_guard_user_id" value
- * @method Client              setFirstname()        Sets the current record's "firstname" value
- * @method Client              setLastname()         Sets the current record's "lastname" value
- * @method Client              setOrigin()           Sets the current record's "origin" value
- * @method Client              setPhone()            Sets the current record's "phone" value
- * @method Client              setEmailAddress()     Sets the current record's "email_address" value
- * @method Client              setEmailConfirmed()   Sets the current record's "email_confirmed" value
- * @method Client              setUser()             Sets the current record's "User" value
- * @method Client              setReservations()     Sets the current record's "Reservations" collection
- * @method Client              setMessages()         Sets the current record's "Messages" collection
+ * @method integer             get()                 Returns the current record's "sf_guard_user_id" value
+ * @method string              get()                 Returns the current record's "firstname" value
+ * @method string              get()                 Returns the current record's "lastname" value
+ * @method string              get()                 Returns the current record's "origin" value
+ * @method string              get()                 Returns the current record's "phone" value
+ * @method string              get()                 Returns the current record's "email_address" value
+ * @method boolean             get()                 Returns the current record's "email_confirmed" value
+ * @method sfGuardUser         get()                 Returns the current record's "User" value
+ * @method Doctrine_Collection get()                 Returns the current record's "Reservations" collection
+ * @method Doctrine_Collection get()                 Returns the current record's "Messages" collection
+ * @method Client              set()                 Sets the current record's "sf_guard_user_id" value
+ * @method Client              set()                 Sets the current record's "firstname" value
+ * @method Client              set()                 Sets the current record's "lastname" value
+ * @method Client              set()                 Sets the current record's "origin" value
+ * @method Client              set()                 Sets the current record's "phone" value
+ * @method Client              set()                 Sets the current record's "email_address" value
+ * @method Client              set()                 Sets the current record's "email_confirmed" value
+ * @method Client              set()                 Sets the current record's "User" value
+ * @method Client              set()                 Sets the current record's "Reservations" collection
+ * @method Client              set()                 Sets the current record's "Messages" collection
  * 
  * @package    atc
  * @subpackage model

@@ -1,4 +1,4 @@
-<p>Dear <?php echo $reservation->Client;?>,</p>
+<p>Dear <?php echo $reservation->firstname;?> <?php echo $reservation->lastname;?>,</p>
 
 <p>Thank you for requesting transportation with ATC.</p>
 

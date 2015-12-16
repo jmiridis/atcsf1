@@ -6,7 +6,7 @@ table.details {margin-left: 8px;}
 table.details th {font-style: italic; font-weight: normal; font-size: 9pt; padding: 0px 8px; line-height: 1.4em;}
 table.details td {font-weight: normal; font-size: 9pt; padding: 0px;}
 </style>
-Dear <?php echo $reservation->Client;?>,
+Dear <?php echo $reservation->firstname;?> <?php echo $reservation->lastname;?>,
 
 <p>Thank you for ordering transportation with ATC.</p>
 
@@ -21,7 +21,7 @@ Dear <?php echo $reservation->Client;?>,
 <table class="details" cellspacing="0" cellpadding="0">
   <tr>
     <th>Customer name:</td>
-    <td><?php echo $reservation->Client;?></td>
+    <td><?php echo $reservation->firstname;?> <?php echo $reservation->lastname;?></td>
   </tr>
   <tr>
     <th>Reservation #:</td>

@@ -59,7 +59,7 @@ th.column-title {background-color: rgb(138, 183, 221); font-weight: normal; lett
         <tbody>
           <tr>
             <th>Name</th>
-            <td class="data"><?php echo $reservation->Client->firstname . ' ' . $reservation->Client->lastname?></td>
+            <td class="data"><?php echo $reservation->firstname . ' ' . $reservation->lastname?></td>
           </tr>
           <tr>
             <th>Origin</th>

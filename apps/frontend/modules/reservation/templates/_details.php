@@ -13,7 +13,7 @@ ul.info li {  margin: 4px 0px; line-height: 1.15em;}
 <table class="details" cellspacing="0" cellpadding="0">
   <tr>
     <th>Customer name:</td>
-    <td><?php echo $reservation->Client;?></td>
+    <td><?php echo $reservation->firstname;?> <?php echo $reservation->lastname;?></td>
   </tr>
   <tr>
     <th>Reservation #:</td>

@@ -10,14 +10,14 @@
  * @property text $message
  * @property Client $Client
  * 
- * @method integer getClientId()      Returns the current record's "client_id" value
- * @method string  getEmailAddress()  Returns the current record's "email_address" value
- * @method text    getMessage()       Returns the current record's "message" value
- * @method Client  getClient()        Returns the current record's "Client" value
- * @method Message setClientId()      Sets the current record's "client_id" value
- * @method Message setEmailAddress()  Sets the current record's "email_address" value
- * @method Message setMessage()       Sets the current record's "message" value
- * @method Message setClient()        Sets the current record's "Client" value
+ * @method integer get()              Returns the current record's "client_id" value
+ * @method string  get()              Returns the current record's "email_address" value
+ * @method text    get()              Returns the current record's "message" value
+ * @method Client  get()              Returns the current record's "Client" value
+ * @method Message set()              Sets the current record's "client_id" value
+ * @method Message set()              Sets the current record's "email_address" value
+ * @method Message set()              Sets the current record's "message" value
+ * @method Message set()              Sets the current record's "Client" value
  * 
  * @package    atc
  * @subpackage model

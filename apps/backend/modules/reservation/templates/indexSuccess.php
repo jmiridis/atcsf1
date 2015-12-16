@@ -71,7 +71,7 @@ table.tablesorter td.future { background-color:#A5E796; }
       <td align="center" class="<?php echo $reservation->getStatus() ?>"><a href="<?php echo url_for('reservation/show?id='.$reservation->getId()) ?>"><?php echo $reservation->getUniqid() ?></a></td>
       <td align="center"><?php echo $reservation->getNoPax() ?></td>
       <td><?php echo $reservation->getDestination() ?><br /><?php echo $reservation->getHotel() ?></td>
-      <td><?php echo $reservation->getClient() ?></td>
+      <td><?php echo $reservation->getFirstname();?> <?php echo $reservation->getLastname();?></td>
       <td align="center"><?php echo $reservation->getRoundTrip() ?></td>
       <td align="center" class="<?php echo (time() < strtotime($reservation->getArrivalDate()))? 'future' : 'past';?>"><?php echo strftime('%d-%b-%Y<br />%H:%Mh', strtotime($reservation->getArrivalDate())) ?><br /><?php echo $reservation->getArrivalFlightNo() ?></td>
       <td align="center" class="<?php echo (time() < strtotime($reservation->getDepartureDate()))? 'future' : 'past';?>"><?php if($reservation->getDepartureDate()):?><?php echo strftime('%d-%b-%Y<br />%H:%Mh', strtotime($reservation->getDepartureDate())) ?><br /><?php echo $reservation->getDepartureFlightNo() ?>

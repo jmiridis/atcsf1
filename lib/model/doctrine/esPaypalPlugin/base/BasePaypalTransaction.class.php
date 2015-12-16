@@ -12,18 +12,18 @@
  * @property text $ipn_data
  * @property Reservation $Reservation
  * 
- * @method integer           getParentId()    Returns the current record's "parent_id" value
- * @method string            getTxnId()       Returns the current record's "txn_id" value
- * @method string            getTxnType()     Returns the current record's "txn_type" value
- * @method string            getStatus()      Returns the current record's "status" value
- * @method text              getIpnData()     Returns the current record's "ipn_data" value
- * @method Reservation       getReservation() Returns the current record's "Reservation" value
- * @method PaypalTransaction setParentId()    Sets the current record's "parent_id" value
- * @method PaypalTransaction setTxnId()       Sets the current record's "txn_id" value
- * @method PaypalTransaction setTxnType()     Sets the current record's "txn_type" value
- * @method PaypalTransaction setStatus()      Sets the current record's "status" value
- * @method PaypalTransaction setIpnData()     Sets the current record's "ipn_data" value
- * @method PaypalTransaction setReservation() Sets the current record's "Reservation" value
+ * @method integer           get()            Returns the current record's "parent_id" value
+ * @method string            get()            Returns the current record's "txn_id" value
+ * @method string            get()            Returns the current record's "txn_type" value
+ * @method string            get()            Returns the current record's "status" value
+ * @method text              get()            Returns the current record's "ipn_data" value
+ * @method Reservation       get()            Returns the current record's "Reservation" value
+ * @method PaypalTransaction set()            Sets the current record's "parent_id" value
+ * @method PaypalTransaction set()            Sets the current record's "txn_id" value
+ * @method PaypalTransaction set()            Sets the current record's "txn_type" value
+ * @method PaypalTransaction set()            Sets the current record's "status" value
+ * @method PaypalTransaction set()            Sets the current record's "ipn_data" value
+ * @method PaypalTransaction set()            Sets the current record's "Reservation" value
  * 
  * @package    atc
  * @subpackage model
