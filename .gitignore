@@ -3,3 +3,5 @@
 /log
 /test
 /config/databases.yml
+/.idea
+/web/.htaccess
