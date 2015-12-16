@@ -1,0 +1,391 @@
+Destination:
+  Destination_1:
+    title: 'Cancun Hotel Zone'
+    description: 'CANCUN Z. HOTELES'
+    active: true
+    created_at: '2011-01-08 23:30:49.836'
+    updated_at: '2011-01-08 23:30:50.509'
+  Destination_2:
+    title: 'Bahia Petempich'
+    description: 'BAHIA PETENPICH'
+    active: true
+    created_at: '2011-01-08 23:31:03.498'
+    updated_at: '2011-01-08 23:31:04.254'
+  Destination_3:
+    title: 'Puerto Morelos'
+    description: 'PUERTO MORELOS'
+    active: true
+    created_at: '2011-01-08 23:31:17.569'
+    updated_at: '2011-01-08 23:31:18.446'
+  Destination_4:
+    title: 'Playa del Carmen / Playacar'
+    description: 'PLAYA DEL CARMEN / PLAYACAR'
+    active: true
+    created_at: '2011-01-08 23:31:38.338'
+    updated_at: '2011-01-08 23:31:38.949'
+  Destination_5:
+    title: 'Akumal - Kantenah'
+    description: 'AKUMAL - KANTENAH'
+    active: true
+    created_at: '2011-01-08 23:32:03.761'
+    updated_at: '2011-01-08 23:32:04.597'
+  Destination_6:
+    title: 'Tulum & Hotel Zone Tulum'
+    description: 'TULUM A Z.H TULUM'
+    active: true
+    created_at: '2011-01-08 23:32:21.177'
+    updated_at: '2011-01-08 23:32:23.411'
+  Destination_7:
+    title: 'Puerto Aventuras'
+    description: 'PUERTO AVENTURAS'
+    active: true
+    created_at: '2011-01-08 23:31:50.241'
+    updated_at: '2011-01-08 23:31:51.128'
+sfGuardPermission:
+  sfGuardPermission_2:
+    name: admin
+    description: 'admin functionality (sfGuard)'
+    created_at: '2011-04-18 16:46:32'
+    updated_at: '2011-04-18 16:46:32'
+  sfGuardPermission_1:
+    name: reservation
+    description: 'reservation functionality '
+    created_at: '2011-04-18 16:14:45'
+    updated_at: '2011-04-18 16:46:56'
+sfGuardUser:
+  sfGuardUser_1:
+    first_name: Costas
+    last_name: Constantinou
+    email_address: ck.costas@gmail.com
+    username: costas
+    algorithm: sha1
+    salt: 229a8fa2ff0322b8717e106f5f5965aa
+    password: 240a813e7fb6cdcb6c3d4b0d34a2e282544f9f48
+    is_active: true
+    is_super_admin: false
+    last_login: '2011-04-18 16:43:32'
+    created_at: '2011-04-18 14:12:06'
+    updated_at: '2011-04-18 16:43:32'
+  sfGuardUser_3:
+    first_name: Johnny
+    last_name: '?'
+    email_address: johnny@americantransferscancun.com
+    username: johnny
+    algorithm: sha1
+    salt: d5a46cc9a3fb5831e2e2c60cf63b8812
+    password: 9539c791d571f24b5101bf7b90efb96d5900283d
+    is_active: true
+    is_super_admin: false
+    last_login: '2011-04-18 16:44:09'
+    created_at: '2011-04-18 16:28:03'
+    updated_at: '2011-04-18 16:44:09'
+  sfGuardUser_2:
+    first_name: Jorgo
+    last_name: Miridis
+    email_address: jorgo@miridis.com
+    username: admin
+    algorithm: sha1
+    salt: 1c42d6285b51a3aa31eef50720f0b1b1
+    password: 13edbc1cf3a0dd885d84b9bdaabee464d7f40bbc
+    is_active: true
+    is_super_admin: true
+    last_login: '2011-04-18 16:49:49'
+    created_at: '2011-04-18 14:13:14'
+    updated_at: '2011-04-18 16:49:49'
+sfGuardUserPermission:
+  sfGuardUserPermission_1_1:
+    User: sfGuardUser_1
+    Permission: sfGuardPermission_1
+    created_at: '2011-04-18 16:30:52'
+    updated_at: '2011-04-18 16:30:52'
+  sfGuardUserPermission_3_1:
+    User: sfGuardUser_3
+    Permission: sfGuardPermission_1
+    created_at: '2011-04-18 16:36:35'
+    updated_at: '2011-04-18 16:36:35'
+  sfGuardUserPermission_2_2:
+    User: sfGuardUser_2
+    Permission: sfGuardPermission_2
+    created_at: '2011-04-18 16:46:32'
+    updated_at: '2011-04-18 16:46:32'
+Transfer:
+  Transfer_1:
+    Destination: Destination_1
+    description: null
+    min_pax: 1
+    max_pax: 4
+    round_trip: RT
+    price: '55'
+    active: true
+    created_at: '2011-01-08 23:51:17.618'
+    updated_at: '2011-01-08 23:51:18.514'
+  Transfer_2:
+    Destination: Destination_1
+    description: null
+    min_pax: 5
+    max_pax: 10
+    round_trip: RT
+    price: '80'
+    active: true
+    created_at: '2011-01-08 23:51:49.058'
+    updated_at: '2011-01-08 23:51:49.834'
+  Transfer_3:
+    Destination: Destination_1
+    description: null
+    min_pax: 1
+    max_pax: 4
+    round_trip: OW
+    price: '40'
+    active: true
+    created_at: '2011-01-08 23:52:17.13'
+    updated_at: '2011-01-08 23:52:17.823'
+  Transfer_4:
+    Destination: Destination_1
+    description: null
+    min_pax: 5
+    max_pax: 10
+    round_trip: OW
+    price: '55'
+    active: true
+    created_at: '2011-01-08 23:52:31.417'
+    updated_at: '2011-01-08 23:52:32.11'
+  Transfer_5:
+    Destination: Destination_2
+    description: null
+    min_pax: 1
+    max_pax: 4
+    round_trip: RT
+    price: '60'
+    active: true
+    created_at: '2011-01-08 23:51:17.618'
+    updated_at: '2011-01-08 23:51:18.514'
+  Transfer_6:
+    Destination: Destination_2
+    description: null
+    min_pax: 5
+    max_pax: 10
+    round_trip: RT
+    price: '70'
+    active: true
+    created_at: '2011-01-08 23:51:49.058'
+    updated_at: '2011-01-08 23:51:49.834'
+  Transfer_7:
+    Destination: Destination_2
+    description: null
+    min_pax: 1
+    max_pax: 4
+    round_trip: OW
+    price: '35'
+    active: true
+    created_at: '2011-01-08 23:52:17.13'
+    updated_at: '2011-01-08 23:52:17.823'
+  Transfer_8:
+    Destination: Destination_2
+    description: null
+    min_pax: 5
+    max_pax: 10
+    round_trip: OW
+    price: '55'
+    active: true
+    created_at: '2011-01-08 23:52:31.417'
+    updated_at: '2011-01-08 23:52:32.11'
+  Transfer_9:
+    Destination: Destination_3
+    description: null
+    min_pax: 1
+    max_pax: 4
+    round_trip: RT
+    price: '70'
+    active: true
+    created_at: '2011-01-08 23:51:17.618'
+    updated_at: '2011-01-08 23:51:18.514'
+  Transfer_10:
+    Destination: Destination_3
+    description: null
+    min_pax: 5
+    max_pax: 10
+    round_trip: RT
+    price: '85'
+    active: true
+    created_at: '2011-01-08 23:51:49.058'
+    updated_at: '2011-01-08 23:51:49.834'
+  Transfer_11:
+    Destination: Destination_3
+    description: null
+    min_pax: 1
+    max_pax: 4
+    round_trip: OW
+    price: '45'
+    active: true
+    created_at: '2011-01-08 23:52:17.13'
+    updated_at: '2011-01-08 23:52:17.823'
+  Transfer_12:
+    Destination: Destination_3
+    description: null
+    min_pax: 5
+    max_pax: 10
+    round_trip: OW
+    price: '50'
+    active: true
+    created_at: '2011-01-08 23:52:31.417'
+    updated_at: '2011-01-08 23:52:32.11'
+  Transfer_13:
+    Destination: Destination_4
+    description: null
+    min_pax: 1
+    max_pax: 4
+    round_trip: RT
+    price: '100'
+    active: true
+    created_at: '2011-01-08 23:51:17.618'
+    updated_at: '2011-01-08 23:51:18.514'
+  Transfer_14:
+    Destination: Destination_4
+    description: null
+    min_pax: 5
+    max_pax: 10
+    round_trip: RT
+    price: '120'
+    active: true
+    created_at: '2011-01-08 23:51:49.058'
+    updated_at: '2011-01-08 23:51:49.834'
+  Transfer_15:
+    Destination: Destination_4
+    description: null
+    min_pax: 1
+    max_pax: 4
+    round_trip: OW
+    price: '55'
+    active: true
+    created_at: '2011-01-08 23:52:17.13'
+    updated_at: '2011-01-08 23:52:17.823'
+  Transfer_16:
+    Destination: Destination_4
+    description: null
+    min_pax: 5
+    max_pax: 10
+    round_trip: OW
+    price: '65'
+    active: true
+    created_at: '2011-01-08 23:52:31.417'
+    updated_at: '2011-01-08 23:52:32.11'
+  Transfer_17:
+    Destination: Destination_7
+    description: null
+    min_pax: 1
+    max_pax: 4
+    round_trip: RT
+    price: '115'
+    active: true
+    created_at: '2011-01-08 23:51:17.618'
+    updated_at: '2011-01-08 23:51:18.514'
+  Transfer_18:
+    Destination: Destination_7
+    description: null
+    min_pax: 5
+    max_pax: 10
+    round_trip: RT
+    price: '130'
+    active: true
+    created_at: '2011-01-08 23:51:49.058'
+    updated_at: '2011-01-08 23:51:49.834'
+  Transfer_19:
+    Destination: Destination_7
+    description: null
+    min_pax: 1
+    max_pax: 4
+    round_trip: OW
+    price: '70'
+    active: true
+    created_at: '2011-01-08 23:52:17.13'
+    updated_at: '2011-01-08 23:52:17.823'
+  Transfer_20:
+    Destination: Destination_7
+    description: null
+    min_pax: 5
+    max_pax: 10
+    round_trip: OW
+    price: '75'
+    active: true
+    created_at: '2011-01-08 23:52:31.417'
+    updated_at: '2011-01-08 23:52:32.11'
+  Transfer_21:
+    Destination: Destination_5
+    description: null
+    min_pax: 1
+    max_pax: 4
+    round_trip: RT
+    price: '130'
+    active: true
+    created_at: '2011-01-08 23:51:17.618'
+    updated_at: '2011-01-08 23:51:18.514'
+  Transfer_22:
+    Destination: Destination_5
+    description: null
+    min_pax: 5
+    max_pax: 10
+    round_trip: RT
+    price: '150'
+    active: true
+    created_at: '2011-01-08 23:51:49.058'
+    updated_at: '2011-01-08 23:51:49.834'
+  Transfer_23:
+    Destination: Destination_5
+    description: null
+    min_pax: 1
+    max_pax: 4
+    round_trip: OW
+    price: '80'
+    active: true
+    created_at: '2011-01-08 23:52:17.13'
+    updated_at: '2011-01-08 23:52:17.823'
+  Transfer_24:
+    Destination: Destination_5
+    description: null
+    min_pax: 5
+    max_pax: 10
+    round_trip: OW
+    price: '85'
+    active: true
+    created_at: '2011-01-08 23:52:31.417'
+    updated_at: '2011-01-08 23:52:32.11'
+  Transfer_25:
+    Destination: Destination_6
+    description: null
+    min_pax: 1
+    max_pax: 4
+    round_trip: RT
+    price: '150'
+    active: true
+    created_at: '2011-01-08 23:51:17.618'
+    updated_at: '2011-01-08 23:51:18.514'
+  Transfer_26:
+    Destination: Destination_6
+    description: null
+    min_pax: 5
+    max_pax: 10
+    round_trip: RT
+    price: '180'
+    active: true
+    created_at: '2011-01-08 23:51:49.058'
+    updated_at: '2011-01-08 23:51:49.834'
+  Transfer_27:
+    Destination: Destination_6
+    description: null
+    min_pax: 1
+    max_pax: 4
+    round_trip: OW
+    price: '90'
+    active: true
+    created_at: '2011-01-08 23:52:17.13'
+    updated_at: '2011-01-08 23:52:17.823'
+  Transfer_28:
+    Destination: Destination_6
+    description: null
+    min_pax: 5
+    max_pax: 10
+    round_trip: OW
+    price: '100'
+    active: true
+    created_at: '2011-01-08 23:52:31.417'
+    updated_at: '2011-01-08 23:52:32.11'

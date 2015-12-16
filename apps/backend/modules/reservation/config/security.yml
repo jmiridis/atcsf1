@@ -1,0 +1,5 @@
+all:
+  credentials: reservation
+
+index:
+  is_secure: on

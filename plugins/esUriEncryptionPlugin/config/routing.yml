@@ -1,0 +1,11 @@
+encrypted_access:
+  url: /access/:encrypted_uri
+  params: { module: esUriEncryptionAccess, action: index }
+
+encryption_test1:
+  url: /encryption/test
+  params: { module: esUriEncryptionAccess, action: test }
+
+encryption_test2:
+  url: /encryption/:param1/test
+  params: { module: esUriEncryptionAccess, action: test }

@@ -1,0 +1,9 @@
+PaypalTransaction:
+  actAs:
+    Timestampable: ~
+  columns:
+    parent_id: { type: integer(4) }
+    txn_id: { type: string(32), notnull: true }
+    txn_type: { type: string(20), notnull: true }
+    status: { type: string(20), notnull: true }
+    ipn_data: {type: text, notnull: true }

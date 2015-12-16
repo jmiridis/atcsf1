@@ -1,0 +1,6 @@
+all:
+  is_secure: on
+  credentials: admin
+
+index:
+  is_secure: on

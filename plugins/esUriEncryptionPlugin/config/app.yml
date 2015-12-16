@@ -1,0 +1,9 @@
+all:
+  es_uri_encryption_plugin:
+    # set to true to enable debug output in the log files
+    debug: false
+    # set to true to enable automatic authentication (auto-login)
+    # it will only work if you also provide a sfGuardUserId when encrypting URIs
+    authenticate: false
+    # set this parameter to change the default secret used to perform the encryption
+    #secret: "some arbitrary string"

@@ -1,0 +1,9 @@
+all:
+  sf_guard_plugin:
+    allow_login_with_email: false
+    success_signout_url: @login
+    success_signin_url: @reservation
+
+  esUriEncryptionPlugin:
+    debug: true
+    authenticate: true

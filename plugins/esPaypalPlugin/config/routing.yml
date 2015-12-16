@@ -1,0 +1,16 @@
+paypal_ipn:
+  url: /paypal
+  params: { module: esPaypal, action: ipn }
+  requirements: { method: post }
+
+paypal_return:
+  url: /paypal/return
+  params: { module: esPaypal, action: return }
+
+paypal_cancel:
+  url: /paypal/cancel
+  params: { module: esPaypal, action: cancel }
+
+paypal_sample:
+  url: /paypal/sample
+  params: { module: esPaypal, action: sample }

@@ -1,0 +1,68 @@
+all:
+# esPaypalPlugin predefined development configuration
+#
+# The development account:
+#  email: paypal@miridis.com
+#  password: s1mplePW
+#
+# The Seller account:
+#  email: sales_1296405385_biz@miridis.com
+#  password: s1mplePW
+#
+# The Buyer account:
+#  email: client_1296406243_per@miridis.com
+#  password: s1mplePW
+#  VISA: 4870718390642409
+#  Exp Date:  2/2016
+  es_paypal_plugin:
+
+    handler: esPaypalHandlerATC
+# If test_mode is set to true, all Paypal transactions will be directed to the Paypal Sandbox
+# Must be set to false in production
+    test_mode: true
+# If debug_mode is set to true, log entries are generated for Paypal related operations
+    debug_mode: true
+# The email address of the Paypal seller account
+    business: sales_1296405385_biz@miridis.com
+# The FORM METHOD used to send data to the URL specified by the return variable. If not set defaults to 2.
+# 0 - all shopping cart payments use the GET method
+# 1 - the buyers browser is redirected to the return URL by using the GET method, but no payment variables are included
+# 2 - the buyers browser is redirected to the return URL by using the POST method, and all payment variables are included
+    return_method: 2
+# The image used for the Paypal button. Any URL can be specified.
+# The following are just some options (https://www.paypal.com/en_US/i/btn/xxx.gif)
+# btn_buynow_SM, btn_buynow_LG, btn_buynowCC_LG, btn_paynow_SM, btn_paynow_LG, btn_paynowCC_LG
+    image_url: https://www.paypal.com/en_US/i/btn/btn_paynowCC_LG.gif
+# Button ecryption requires 3 encryption keys and the certificate id assigned by Paypal
+# Login to your merchant account and go to the following link to find more information
+# https://www.paypal.com/us/cgi-bin/webscr?cmd=_profile-website-cert
+    certificate:
+      cert_id: ERC56ZCBB6AVY
+      ewp_prvkey_fname: %SF_PLUGINS_DIR%/esPaypalPlugin/data/certificates/plugin-prvkey.pem
+      ewp_cert_fname:   %SF_PLUGINS_DIR%/esPaypalPlugin/data/certificates/plugin-pubcert.pem
+      pp_cert_fname:    %SF_PLUGINS_DIR%/esPaypalPlugin/data/certificates/paypal-pubcert.pem
+# The plugin provide 3 default actions that are accessed by Paypal upon success/error/cancelation
+# overwrite to implement your own actions
+    callback:
+#      notify: esPaypal/ipn
+#      return: esPaypal/return
+#      cancel: esPaypal/cancel
+
+# HTML Variables for Displaying PayPal Checkout Pages
+# https://cms.paypal.com/us/cgi-bin/?cmd=_render-content&content_ID=developer/e_howto_html_Appx_websitestandard_htmlvariables#id08A6HI0709B
+    checkout:
+#      page_style: primary
+#      image_url:
+#      cpp_header_image:
+#      cpp_headerback_color:
+#      cpp_headerborder_color:
+#      cpp_payflow_color:
+#      cs:
+#      lc:
+#      no_note:
+#      cn:
+#      no_shipping:
+#      cbt:
+#      cancel_return:
+
+

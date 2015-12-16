@@ -1,0 +1,7 @@
+esUriEncryptionPlugin file:///W:/symfony/plugins/SVN_Repositories/esUriEncryptionPlugin/trunk
+sfTaskExtraPlugin http://svn.symfony-project.com/plugins/sfTaskExtraPlugin/trunk
+sfDoctrineGuardPlugin http://svn.symfony-project.com/plugins/sfDoctrineGuardPlugin/trunk
+sfWebBrowserPlugin http://svn.symfony-project.com/plugins/sfWebBrowserPlugin/trunk
+sfDoctrineGuardLoginHistoryPlugin http://svn.symfony-project.com/plugins/sfDoctrineGuardLoginHistoryPlugin/trunk
+esEmailPlugin file:///W:/symfony/plugins/SVN_Repositories/esEmailPlugin/source/trunk
+

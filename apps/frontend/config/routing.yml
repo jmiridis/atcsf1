@@ -1,0 +1,84 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: home, action: index }
+
+login:
+  url: /login
+  params: { module: sfGuardAuth, action: signin }
+
+logout:
+  url: /logout
+  params: { module: sfGuardAuth, action: signout }
+
+promotion:
+  url: /promotion/:key
+  param: { module: promotion, action: index }
+
+reservations:
+  url: /reservations
+  param: { module: reservation, action: index }
+
+reservation_show:
+  url: /reservation/:uniqid/show
+  param: { module: reservation, action: show }
+
+reservation_new:
+  url: /reservation
+  param: { module: reservation, action: new }
+
+reservation_specific1:
+  url: /reservation/to/:destination/:type/:pax
+  param: { module: reservation, action: new }
+reservation_specific2:
+  url: /reservation/to/:destination/:type
+  param: { module: reservation, action: new }
+reservation_specific3:
+  url: /reservation/to/:destination
+  param: { module: reservation, action: new }
+
+reservation_promo1:
+  url: /reservation/promo/:destination/:type/:pax
+  param: { module: reservation, action: new }
+
+reservation_promo2:
+  url: /reservation/promo/:destination/:type
+  param: { module: reservation, action: new }
+
+reservation_promo3:
+  url: /reservation/promo/:destination
+  param: { module: reservation, action: new }
+
+reservation_confirmation:
+  url: /confirmation/:uniqid
+  param: { module: reservation, action: confirmation }
+
+customer_register:
+  url: /customer/register/*
+  param: { module: default, action: secure }
+
+
+## do not remove  @registration_access and @reservation_access until esUriEncryptionplugin has been tested
+registration_access:
+  url: /register/:encrypted_url
+  params: { module: esUrlEncryptionAccess, action: index }
+
+reservation_access:
+  url: /access/:encrypted_url
+  params: { module: esUrlEncryptionAccess, action: index }
+
+encrypted_access:
+  url: /access/:encrypted_uri
+  params: { module: esUriEncryptionAccess, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

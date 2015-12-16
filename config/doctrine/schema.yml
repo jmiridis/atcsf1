@@ -1,0 +1,79 @@
+Destination:
+  actAs:
+    Timestampable: ~
+    Sluggable: { fields: [title], canUpdate: true }
+  columns:
+    title:       { type: string(255), notnull: true }
+    description: { type: text}
+    seq_num:     { type: integer(4), notnull: true }
+    active:      { type: boolean, notnull: true }
+
+Transfer:
+  actAs:
+    Timestampable: ~
+  columns:
+    destination_id:  { type: integer(4), notnull: true }
+    description: { type: text}
+    min_pax:     { type: integer(4), notnull: true }
+    max_pax:     { type: integer(4), notnull: true }
+    round_trip:  { type: string(2), notnull: true }
+    price:       { type: numeric, size: 10, scale: 2, notnull: true }
+    active:      { type: boolean, notnull: true }
+  relations:
+    Destination: { class: Destination, local: destination_id, foreign: id, type: one, foreignAlias: Transfers}
+
+
+Client:
+  actAs:
+    Timestampable: ~
+  columns:
+    sf_guard_user_id:     { type: integer(4), notnull: true }
+    firstname:            { type: string(50), notnull: true }
+    lastname:             { type: string(50), notnull: true }
+    origin:               { type: string(255), notnull: false }
+    phone:                { type: string(50), notnull: false }
+    email_address:        { type: string(50), notnull: true }
+    email_confirmed:      { type: boolean,    notnull: true, default: false }
+  relations:
+    User:
+      class: sfGuardUser
+      foreignType: one
+      foreignAlias: Profile
+
+Reservation:
+  actAs:
+    Timestampable: ~
+  columns:
+    client_id:            { type: integer(4), notnull: true }
+    firstname:            { type: string(50), notnull: true }
+    lastname:             { type: string(50), notnull: true }
+    destination_id:       { type: integer(4), notnull: true }
+    uniqid:               { type: string(32), notnull: true }
+    round_trip:           { type: string(2),  notnull: true }
+    no_pax:               { type: integer(2), notnull: true }
+    hotel:                { type: string(255), notnull: true }
+    arrival_date:         { type: timestamp,  notnull: true }
+    arrival_flight_no:    { type: string(20), notnull: true }
+    departure_date:       { type: timestamp,  notnull: false }
+    departure_flight_no:  { type: string(20), notnull: false }
+    price:                { type: numeric, size: 10, scale: 2, notnull: true }
+    comment:              { type: text, notnull: false }
+    deleted:              { type: boolean, notnull: true, default: false }
+    status:               { type: varchar(20), notnull: true, default: false }
+    payment_date:         { type: timestamp,  notnull: false }
+  relations:
+    Client: { class: Client, local: client_id, foreign: id, type: one, foreignAlias: Reservations }
+    Destination: { class: Destination, local: destination_id, foreign: id, type: one, foreignAlias: Reservations }
+    PaypalTransactions: { class: PaypalTransaction, local: id, foreign: parent_id, type: many, foreignAlias: Reservation }
+
+
+
+Message:
+  actAs:
+    Timestampable: ~
+  columns:
+    client_id:     { type: integer(4), notnull: false }
+    email_address: { type: string(50), notnull: true }
+    message:       { type: text, notnull: true }
+  relations:
+    Client: {class: Client, local: client_id, foreign: id, type: one, foreignAlias: Messages }

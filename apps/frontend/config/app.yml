@@ -1,0 +1,77 @@
+################################################################################
+#                                A L L
+################################################################################
+all:
+#===============================================================================
+# esPaypalPlugin
+#===============================================================================
+# see plugins/esPaypalPlugin/config/app.yml for defaults
+#-------------------------------------------------------------------------------
+  es_paypal_plugin:
+# this is the plugins default handler
+    handler: esPaypalHandlerATC
+# HTML Variables for Displaying PayPal Checkout Pages
+# https://cms.paypal.com/us/cgi-bin/?cmd=_render-content&content_ID=developer/e_howto_html_Appx_websitestandard_htmlvariables#id08A6HI0709B
+    checkout:
+      page_style: "primary"
+      image_url: "http://americantransferscancun.com/images/paypal-logo.png"
+      cpp_header_image: "http://americantransferscancun.com/images/paypal-header.png"
+      cbt: "Return to Your Reservation at ATC"
+#===============================================================================
+# esEmailPlugin
+#===============================================================================
+  es_email_plugin:
+    layoutDir: %SF_LIB_DIR%/email/templates
+    templateDir: %SF_LIB_DIR%/email/modules
+    autoEmbedImages: true
+#===============================================================================
+# sfGuardPlugin
+#===============================================================================
+  sf_guard_plugin:
+    success_signout_url: @homepage
+#===============================================================================
+# esUrlEncryptionPlugin
+#===============================================================================
+  esUriEncryptionPlugin:
+    debug: true
+    authenticate: true
+#===============================================================================
+# CUSTOM
+#===============================================================================
+  email:
+    from: reservation@americantransferscancun.com
+    bcc: reservation@americantransferscancun.com
+    contact: contact@americantransferscancun.com
+################################################################################
+#                                P R O D
+################################################################################
+prod:
+#===============================================================================
+# esPaypalPlugin
+#===============================================================================
+  es_paypal_plugin:
+# activate/deactivate test mode (sandbox)
+    test_mode: false
+# activate/deactivate debug mode (log/paypal.log)
+    debug_mode: true
+# The email address of the Paypal seller account
+    business: payments@americantransferscancun.com
+# Button ecryption requires 3 encryption keys and the certificate id assigned by Paypal
+# Login to your merchant account and go to the following link to find more information
+# https://www.paypal.com/us/cgi-bin/webscr?cmd=_profile-website-cert
+# ewp =  encrypted website payments
+    certificate:
+      cert_id: Z7VVARK7VYCA2
+      ewp_prvkey_fname: %SF_DATA_DIR%/certificates/prvkey_Z7VVARK7VYCA2.pem
+      ewp_cert_fname:   %SF_DATA_DIR%/certificates/cert_Z7VVARK7VYCA2.pem
+      pp_cert_fname:    %SF_DATA_DIR%/certificates/paypal_Z7VVARK7VYCA2.pem
+
+################################################################################
+#                                D E V
+################################################################################
+dev:
+  email:
+    from: reservation@americantransferscancun.com
+    bcc: jorgo@miridis.com
+    contact: jorgo@miridis.com
+

@@ -1,0 +1,13 @@
+Renew Certificate
+-----------------
+https://www.paypal.com/us/cgi-bin/webscr?cmd=_profile-website-cert
+
+Creating Your Private Key Using OpenSSL
+---------------------------------------
+openssl genrsa -out my-prvkey.pem 1024
+
+Creating Your Public Certificate Using OpenSSL
+----------------------------------------------
+openssl req -new -key my-prvkey.pem -x509 -days 365 -out my-pubcert.pem  # 1825 days for 5 years
+
+upload -> certificate id

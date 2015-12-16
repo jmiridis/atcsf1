@@ -1,0 +1,1 @@
+<div style="white-space: pre-wrap"><?php echo $sf_content;?></div>

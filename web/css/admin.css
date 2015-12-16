@@ -1,0 +1,129 @@
+/* =============*/
+/*   LAYOUT     */
+/* =============*/
+html,body {height: 100%}
+body {margin: 0; color: #111111; font-size: 80%; line-height: 1.15em; background-color: #666; }
+
+body,td {font-family: Arial; }
+h1 {font-size: 1.5em; font-weight: normal; color: #333333; margin-top: 0px;}
+
+input[type=text], select, textarea {font-size: 85%; font-family: Verdana; background-color: #E9E9E9; line-height: 1.5em;}
+input[type=submit] {font-size: 100%; font-weight: bold;font-family: Verdana;}
+D07C11
+label {font-size: 85%; font-family: Verdana; line-height: 1.5em;}
+
+#wrapper {text-align: left; width: 780px; height: 100%;  margin: 0 auto;}
+#layout-table {height:100%; border: 1px solid #666; border-width: 0px 1px; background-color: #FFFFFF;}
+
+#menu    {width: 145px; vertical-align: top; border-right: 1px solid #CCC; padding-right: 5px;}
+#content {width: 630px; vertical-align: top;overflow: hidden;}
+#content-box {padding: 10px 30px 20px 30px;}
+
+div.footer-block {width: 780px; text-align: right; background-color: #555555; height: 30px;}
+div.footer-text {padding-right: 10px;font-family: Tahoma; font-size: 8pt; color: #888888; line-height: 30px;}
+
+div.page_title {font-weight: bold; font-size: 1.2em; padding: 0px; color: #2E3091; font-family: Verdana; margin: 0px 0px 15px 0px;}
+
+a { color: #2E3091; font-family: Verdana;}
+
+div.separator {border-top: 1px dotted #999; margin: 10px 0px; padding: 0px; height: 1px;}
+/* ======================== */
+/*  GENERAL PAGE ELEMENTS   */
+/* ======================== */
+/* text-box generally after page title*/
+div.text-box {margin: 15px 0px; text-align: justify;}
+/* used for table striping */
+.striped {background-color: #DBE9F5; border: 1px dotted #999; border-width: 1px 0px;}
+
+div.section-box  {margin-top: 15px; border: 1px solid #999; -moz-border-radius: 8px; -webkit-border-radius: 8px; -khtml-border-radius: 8px; border-radius: 8px;}
+div.section-box-half  {margin-top: 15px; border: 1px solid #999; -moz-border-radius: 8px 8px 0px 0px; -webkit-border-radius: 8px 8px 0px 0px; -khtml-border-radius: 8px 8px 0px 0px; border-radius: 8px 8px 0px 0px;}
+.section-title   {background-color: #666; font-weight: normal; letter-spacing: 2px; color: #FFF; padding: 6px 12px 4px 12px !important; border-width: 0px;  -moz-border-radius: 8px 8px 0px 0px; -webkit-border-radius: 8px 8px 0px 0px; -khtml-border-radius: 8px 8px 0px 0px; border-radius: 8px 8px 0px 0px;}
+.section-content {background-color: #DBE9F5; border-width: 0px; -moz-border-radius: 0px 0px 8px 8px; -webkit-border-radius: 0px 0px 8px 8px; -khtml-border-radius: 0px 0px 8px 8px; border-radius: 0px 0px 8px 8px; padding: 15px;}
+.section-form    {border-width: 0px; -moz-border-radius: 0px 0px 8px 8px; -webkit-border-radius: 0px 0px 8px 8px; -khtml-border-radius: 0px 0px 8px 8px; border-radius: 0px 0px 8px 8px; padding-bottom: 8px;}
+
+
+/* ======================== */
+/*  Table Forms             */
+/* ======================== */
+table.form  {font-family: Verdana;}
+table.form>tbody>tr>th {white-space: nowrap; width: 5%; padding: 3px 0px; font-size: 90%; font-weight: normal; color: #222; border-bottom: 1px dotted #CCC; padding: 4px 5px 4px 12px; background-color: #DBE9F5;}
+table.form>tbody>tr>td {padding: 0px; border-bottom: 1px dotted #CCC;}
+
+table.styled  {font-family: Verdana;}
+table.styled>tbody>tr>th {white-space: nowrap; width: 5%; padding: 3px 0px; font-size: 90%; font-weight: normal; color: #222; border-bottom: 1px dotted #CCC; padding: 4px 5px 4px 12px; background-color: #DBE9F5;}
+table.styled>tbody>tr>td {padding: 0px; border-bottom: 1px dotted #CCC;}
+table.styled>tbody>tr>td.data {padding: 4px;}
+
+td.mini-title {font-size: 0.85em; padding: 0px; font-family: Tahoma;padding: 3px 0px 0px 3px; }
+
+ul.radio_list {margin: 0px; padding: 0px;}
+ul.radio_list li {  list-style: none; display: inline;}
+
+#price {padding: 2px 5px; font-weight: bold; color: #333333;}
+
+
+ul.error_list {margin: 0px; padding: 0px; list-style: none;}
+ul.error_list {background-color: #DD3333; color: #FFFFFF; font-size: 1.0em; padding: 1px 3px 2px 3px; line-height: 1.2em;}
+
+
+/* ======================== */
+/*  Rounded Corner Buttons  */
+/* ======================== */
+.button {
+   display: inline-block;
+   line-height: 1;
+   padding: 3px 10px;
+   text-decoration: none;
+   font-weight: bold;
+   color: #fff;
+   background-color: #1165AC;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -khtml-border-radius: 5px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+input.button, button.button {
+   border: 0px none;
+}
+.buttonwrap {
+   display: inline-block;
+   position: relative;
+   zoom: 1;
+   *display: inline;
+}
+.corner {
+   position: absolute;
+   width: 5px;
+   height: 5px;
+   background:  transparent no-repeat 0 0; /* url(/images/corner.png) */
+}
+.tl { top: 0; left: 0; background-position: left top; }
+.tr { top: 0; right: 0; background-position: right top; }
+.bl { bottom: 0; left: 0; background-position: left bottom; }
+.br { bottom: 0; right: 0; background-position: right bottom; }
+/* =============*/
+/*   MENU       */
+/* =============*/
+ul.menu    {font-family: Verdana; font-weight: bold; font-size: 10pt; margin-top: 50px; padding-left: 20px;}
+ul.menu li {margin-top: 10px; padding: 0px 0px 0px 12px; list-style: none; background: url(/images/bar-sprite.png) no-repeat 0px -18px;  height: 18px;}
+ul.menu li.selected {background-position: 0px 0px;  border-bottom: 1px solid #CCCCCC;}
+
+ul.menu li:hover {background-position: 0 -36px; height: 18px; }
+ul.menu li a          {color: #444; text-decoration: none; line-height: 1.2em;}
+ul.menu li a:hover    {color: #1064AC;}
+ul.menu li.selected a {color: #1064AC;}
+
+
+div.intro {font-size: 10pt; margin: 15px 0px; text-align: justify; line-height: 1.5em;}
+div.question { font-size: 10pt; font-weight: normal; color: #282B7D; margin: 8px 0px 0px 0px; }
+div.answer {font-size: 10pt; margin: 3px 0px; text-align: justify; padding: 0px 0px 5px 18px;}
+a.view-plus  {padding-left: 20px; display: inline-block; background: url(/images/view-plus.png) no-repeat left top transparent !important;}
+a.view-minus {padding-left: 20px; display: inline-block; background: url(/images/view-minus.png) no-repeat left top transparent !important;}
+
+a.question {padding-left: 22px; background: url(/images/view-plus.png) no-repeat left top transparent !important; text-decoration: underline;}
+a.question-open {padding-left: 22px; background: url(/images/view-minus.png) no-repeat left top transparent !important; text-decoration: underline;}
+div.qanswer {font-size: 10pt; margin: 3px 15px 0px 22px; text-align: justify; line-height: 1.5em;}
+
+
+div.payment-text { background-color: #FFFFFF; padding: 8px; border: 1px dashed #999; margin-bottom: 15px;}
