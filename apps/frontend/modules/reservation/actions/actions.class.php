@@ -117,10 +117,10 @@ class reservationActions extends sfActions
     $this->prices = json_encode(Doctrine::getTable('Transfer')->getActivePrices());
     $this->form   = new BookingForm(null, array('client_id'=>$this->getUser()->getAttribute('client_id', null, 'Client')));
 
-    if($request->getParameter('destination'))
-    {
-      $destination  = Doctrine::getTable('Destination')->findOneBySlug($request->getParameter('destination'));
-    }
+      /** @var Destination $destination */
+    $destination = ($request->getParameter('destination'))?
+          Doctrine::getTable('Destination')->findOneBySlug($request->getParameter('destination')) :
+      null;
 
     $pax = 0;
     if($request->getParameter('pax'))
