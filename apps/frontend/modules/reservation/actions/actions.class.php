@@ -130,7 +130,7 @@ class reservationActions extends sfActions
     }
 
     $defaults = array(
-      'destination_id' => $destination->id,
+      'destination_id' => (null !== $destination)? $destination->id : null,
       'round_trip'     => $request->getParameter('type'),
       'no_pax'         => $pax
     );
