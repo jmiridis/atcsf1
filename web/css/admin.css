@@ -9,17 +9,17 @@ h1 {font-size: 1.5em; font-weight: normal; color: #333333; margin-top: 0px;}
 
 input[type=text], select, textarea {font-size: 85%; font-family: Verdana; background-color: #E9E9E9; line-height: 1.5em;}
 input[type=submit] {font-size: 100%; font-weight: bold;font-family: Verdana;}
-D07C11
+
 label {font-size: 85%; font-family: Verdana; line-height: 1.5em;}
 
-#wrapper {text-align: left; width: 780px; height: 100%;  margin: 0 auto;}
+#wrapper {text-align: left; height: 100%;  margin: 0 auto;}
 #layout-table {height:100%; border: 1px solid #666; border-width: 0px 1px; background-color: #FFFFFF;}
 
 #menu    {width: 145px; vertical-align: top; border-right: 1px solid #CCC; padding-right: 5px;}
 #content {width: 630px; vertical-align: top;overflow: hidden;}
 #content-box {padding: 10px 30px 20px 30px;}
 
-div.footer-block {width: 780px; text-align: right; background-color: #555555; height: 30px;}
+div.footer-block { text-align: right; background-color: #555555; height: 30px;}
 div.footer-text {padding-right: 10px;font-family: Tahoma; font-size: 8pt; color: #888888; line-height: 30px;}
 
 div.page_title {font-weight: bold; font-size: 1.2em; padding: 0px; color: #2E3091; font-family: Verdana; margin: 0px 0px 15px 0px;}
