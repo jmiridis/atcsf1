@@ -1,4 +1,4 @@
-Dear <?php echo $reservation->Client;?>,
+Dear <?php echo $reservation->firstname;?> <?php echo $reservation->lastname;?>,
 
 Thank you for ordering transportation with ATC.
 
@@ -13,7 +13,7 @@ You can access your reservation at any time using the following link:
 
 Reservation Details
 ====================
-Customer name: <?php echo $reservation->Client;?>
+Customer name: <?php echo $reservation->firstname;?> <?php echo $reservation->lastname;?>
 
 Reservation #: <?php echo $reservation->uniqid;?>
 

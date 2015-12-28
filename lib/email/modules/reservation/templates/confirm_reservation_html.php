@@ -1,4 +1,4 @@
-<p>Dear <?php echo $reservation->Client;?>,</p>
+<p>Dear<?php echo $reservation->firstname;?> <?php echo $reservation->lastname;?>,</p>
 
 <p>Thank you for ordering transportation with ATC.</p>
 
@@ -14,7 +14,7 @@
 <table class="reservation" cellspacing="0" cellpadding="2">
   <tr>
     <th valign="top">Customer name</th>
-    <td><?php echo $reservation->Client;?></td>
+    <td><?php echo $reservation->firstname;?> <?php echo $reservation->lastname;?></td>
   </tr>
   <tr>
     <th valign="top">Reservation #</th>

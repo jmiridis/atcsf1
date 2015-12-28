@@ -1,4 +1,4 @@
-<p>Dear <?php echo $reservation->Client;?>,</p>
+<p>Dear <?php echo $reservation->firstname;?> <?php echo $reservation->lastname;?>,</p>
 
 <p>We have received your transportation reservation and we are glad to welcome you soon here in Cancun.</p>
 
