@@ -48,7 +48,7 @@ ul.info li {  margin: 4px 0px; line-height: 1.15em;}
 
 <ul class="info">
   <li>Amounts are in U.S. Dollars. </li>
-  <li>We accept U.S. and Canadian Dollars (rate: 1 CAD = 1 USD). If you'd rather pay in Mexican Pesos, please check the current rate with your driver.</li>
+  <li>We accept U.S. and Canadian Dollars. If you'd rather pay in Mexican Pesos, please check the current rate with your driver.</li>
 </ul>
 
 
