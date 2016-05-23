@@ -84,9 +84,9 @@ If you need private transportation from Cancun Airport to your hotel, ATC is you
                     <td class="service-icon"><img src="/images/apartments.png" width="75" height="75" alt="" border="0" /></td>
                     <td valign="top" class="service-text">
                         <ul class="service">
+                            <li>Cancun</li>
                             <li>Playa del Carmen</li>
-                            <li>Mamitas Beach</li>
-                            <li></li>
+                            <li>Holbox</li>
                         </ul>
                         <div class="price">from $50 USD</div>
                     </td>
