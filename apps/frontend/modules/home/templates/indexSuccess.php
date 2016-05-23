@@ -62,10 +62,8 @@ If you need private transportation from Cancun Airport to your hotel, ATC is you
                         <ul class="service">
                             <li>Tulum ruins and</li>
                             <li>Playa del Carmen shopping</li>
-                            <li><div class="price">$60 USD</div></li>
-                            <!--li>per person</li -->
                         </ul>
-
+                        <div class="price">$60 USD</div>
                     </td>
                 </tr>
             </table>
@@ -104,10 +102,8 @@ If you need private transportation from Cancun Airport to your hotel, ATC is you
                         <ul class="service">
                             <li>Special price</li>
                             <li>for groups</li>
-                            <li><div class="price"></div></li>
-                            <!--li>per person</li -->
                         </ul>
-
+                        <div class="price"></div>
                     </td>
                 </tr>
             </table>
