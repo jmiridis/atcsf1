@@ -19,6 +19,7 @@ class reservationActions extends sfActions
 
         $this->reservations = Doctrine_Core::getTable('Reservation')
             ->createQuery('a')
+            ->where('deleted=false')
             ->orderBy('a.arrival_date DESC')
             ->limit($limit)
             ->offset($offset)
