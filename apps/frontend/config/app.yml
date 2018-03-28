@@ -61,10 +61,10 @@ prod:
 # https://www.paypal.com/us/cgi-bin/webscr?cmd=_profile-website-cert
 # ewp =  encrypted website payments
     certificate:
-      cert_id: R9NK2J5BU47UJ
-      ewp_prvkey_fname: %SF_DATA_DIR%/certificates/prvkey_R9NK2J5BU47UJ.pem
-      ewp_cert_fname:   %SF_DATA_DIR%/certificates/cert_R9NK2J5BU47UJ.pem
-      pp_cert_fname:    %SF_DATA_DIR%/certificates/paypal_R9NK2J5BU47UJ.pem
+      cert_id: 26G8ZLXR6NFQL
+      ewp_prvkey_fname: %SF_DATA_DIR%/certificates/prvkey_26G8ZLXR6NFQL.pem
+      ewp_cert_fname:   %SF_DATA_DIR%/certificates/cert_26G8ZLXR6NFQL.pem
+      pp_cert_fname:    %SF_DATA_DIR%/certificates/paypal_26G8ZLXR6NFQL.pem
 
 ################################################################################
 #                                D E V
