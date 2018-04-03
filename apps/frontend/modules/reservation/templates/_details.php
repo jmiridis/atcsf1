@@ -95,8 +95,8 @@ ul.info li {  margin: 4px 0px; line-height: 1.15em;}
 <div class="section-title">General Information / Recommendations</div>
 <div class="section-content">
 <ul class="info">
-  <li>Amounts are in U.S. Dollars. </li>
-  <li>We accept U.S. and Canadian Dollars (rate: 1 CAD = 1 USD). If you'd rather pay in Mexican Pesos, please check the current rate with your driver.</li>
+  <li>Amounts are in U.S. Dollars.</li>
+  <li>We accept U.S. and Canadian Dollars. If you'd rather pay in Mexican Pesos, please check the current rate with your driver.</li>
   <li>Please print this confirmation and have it with you upon arrival in Cancun.</li>
   <li>To not be fooled by others at the airport, if lost: Call +52 (998) 214-5918 or +52 (998) 201-1720. Our staff is at the airport, they just might be assisting other passengers.</li>
 </ul>
