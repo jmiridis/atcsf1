@@ -161,6 +161,16 @@ class esPaypalButton implements  ArrayAccess, Iterator, Countable
   }
 
   /**
+   * renderUnEncrypted()
+   *
+   * @return
+   */
+  public function renderUnEncrypted()
+  {
+      return $this->render($this->fields);
+  }
+
+  /**
    * Creates the form element containing hidden input fields with post parameters.
    *
    * @return string HTML code of the complete form element
